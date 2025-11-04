@@ -22,8 +22,11 @@ public class Patterns{
         while (row<rows)
         {
             row++; 
-            System.out.println(numbers);
+            while (numbers<row)
+            {
             numbers++;
+            System.out.println(numbers);
+            }
         }
     }
     public static void main (String [] args){
