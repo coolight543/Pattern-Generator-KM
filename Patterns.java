@@ -18,7 +18,6 @@ public class Patterns{
     {
         int numbers = 1;
         int row = 0; 
-        int i = 0;
         while (row<rows)
         {
             row++; 
@@ -34,3 +33,4 @@ public class Patterns{
     triangle(5);
     }
 }
+
