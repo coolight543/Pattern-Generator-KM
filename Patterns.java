@@ -16,16 +16,25 @@ public class Patterns{
     }
     public static void triangle (int rows)
     {
-        int numbers = 1;
         int row = 0; 
         while (row<rows)
         {
-            row++; 
+            row++;
+            int numbers = 0;
             while (numbers<row)
             {
-            numbers++;
-            System.out.println(numbers);
+                System.out.print(row);
+                numbers++;
             }
+            System.out.println();
+        }
+    }
+    public static void EO (int maxE)
+    {
+        String letter = "E";
+        if (maxE % 2 == 0)
+        {
+            letter = "O";
         }
     }
     public static void main (String [] args){
