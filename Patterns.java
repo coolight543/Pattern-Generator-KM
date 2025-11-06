@@ -1,5 +1,5 @@
 // Kuang Miao
-//11 4 2025
+// 11 4 2025
 // This project is meant to print out the assigned patterns
 public class Patterns{
 
@@ -45,31 +45,46 @@ public class Patterns{
     public static void EO (int maxE)
     {
         String letter = "E";
-        for (int i = 1; i <= maxE; i+=2)
-        {
-            if (maxE % 2 == 0)
-            {
-                letter = "O";
-            }
-            for (int j = 0; j < i; j++)
-            {
-                System.out.print(letter);
-            }
-            System.out.println();
+        if(maxE%2==0){
+            letter = "O";
         }
-        for (int i = 2; i <=maxE; i +=2)
+        for (int i = 0; i < maxE; i++)
         {
-            if (maxE % 2 ==0)
-            {
-                letter = "E";
+          
+                for (int j = 0; j <= i; j+=1)
+                {
+                 
+                        System.out.print(letter);
+                        
+                
+                }
+                if(letter.equals("E")){
+                    letter = "O";
+                }
+                else{
+                    letter = "E";
+                }
+                System.out.println();
             }
-            for (int j = 0; j<i; j++)
-            {
-                System.out.print(letter);
-            }
-            System.out.println();
-        }
         
+        for (int i = maxE-2; i >= 0; i--)
+        {
+          
+                for (int j = 0; j <= i; j++)
+                {
+                 
+                        System.out.print(letter);
+                        
+                
+                }
+                if(letter.equals("E")){
+                    letter = "O";
+                }
+                else{
+                    letter = "E";
+                }
+                System.out.println();
+            }
     }
     public static void pyramid(int rows)
     {
@@ -88,7 +103,7 @@ public class Patterns{
     stars(8);
     triangle(5);
     odds(9);
-    EO(6);
+    EO(5);
     pyramid(5);
     }
 }
