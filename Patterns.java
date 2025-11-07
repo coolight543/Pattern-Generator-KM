@@ -3,6 +3,8 @@
 // This project is meant to print out the assigned patterns
 public class Patterns{
 
+    //precondition: input must be a positive integer
+    //postcondition: will print out the number of rows and two stars extra for each row (start at 1 star)
     public static void stars (int rows)
     {
         String stars = "*";
@@ -14,6 +16,8 @@ public class Patterns{
             stars += "**";
           }
     }
+    //precondition: input must be a positive integer
+    //postcondition: will print out a triangle of numbers: the row number equals to the numerical values and the number of numbers will be the numbers printed 
     public static void triangle (int rows)
     {
         int i = 0; 
@@ -29,6 +33,8 @@ public class Patterns{
             System.out.println();
         }
     }
+    //precondition: input must be a positive odd integer
+    //poscondition: will print the number of numbers from the start value to the end (1), odd numbers only
     public static void odds (int start)
     {
             for (int number = start; number>0; number -=2)
@@ -41,7 +47,8 @@ public class Patterns{
             }
         
     }
-    
+    //precondition: input must be a positive integer
+    //postcondition: will print E and O alternating, with the max number of Es in the most middle
     public static void EO (int maxE)
     {
         String letter = "E";
@@ -86,6 +93,8 @@ public class Patterns{
                 System.out.println();
             }
     }
+    //precondition: input is a positive integer
+    //postcondition: will print number of rows with the largest number be only 1 term in the final row, every preceding row will have two extra terms with the numerical value less 1.
     public static void pyramid(int rows)
     {
         int length = rows * 2 - 1;
@@ -104,6 +113,7 @@ public class Patterns{
     triangle(5);
     odds(9);
     EO(5);
+    EO(6);
     pyramid(5);
     }
 }
