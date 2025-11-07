@@ -119,4 +119,3 @@ public class Patterns{
 }
 // outer loop, how many rows there are
 // inner loop, how many letters/numbers I should print on each row
-
