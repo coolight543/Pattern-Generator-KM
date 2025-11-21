@@ -100,6 +100,10 @@ public class Patterns{
         int length = rows * 2 - 1;
         for (int i = 1; i<=rows; i++)
         {
+            for (int k = 0; k<i; k++)
+            {
+                System.out.print(" ");
+            }
             for (int j = 0; j < length; j++)
             {
                 System.out.print(i);
